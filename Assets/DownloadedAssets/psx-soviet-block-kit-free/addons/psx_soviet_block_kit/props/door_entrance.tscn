@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_soviet_block_kit/models/door_entrance_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_soviet_block_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.0800, 2.2700, 0.2400)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0800, 2.2700, 0.2400)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(1.0200, 0.0700, 0.2400)
+
+[sub_resource type="BoxShape3D" id="box3"]
+size = Vector3(0.9600, 2.1800, 0.1569)
+
+[node name="door_entrance" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+clip = "open"
+
+[node name="Collision" type="StaticBody3D" parent="door_entrance"]
+
+[node name="Box" type="CollisionShape3D" parent="door_entrance/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5300, 1.1350, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="door_entrance/door_entrance_casing_r"]
+
+[node name="Box" type="CollisionShape3D" parent="door_entrance/door_entrance_casing_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5300, 1.1350, -0.0000)
+shape = SubResource("box1")
+
+[node name="Collision" type="StaticBody3D" parent="door_entrance/door_entrance_casing_top"]
+
+[node name="Box" type="CollisionShape3D" parent="door_entrance/door_entrance_casing_top/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.2250, -0.0000)
+shape = SubResource("box2")
+
+[node name="Collision" type="StaticBody3D" parent="door_entrance/door_entrance_leaf"]
+
+[node name="Box" type="CollisionShape3D" parent="door_entrance/door_entrance_leaf/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4800, 1.1000, 0.0534)
+shape = SubResource("box3")

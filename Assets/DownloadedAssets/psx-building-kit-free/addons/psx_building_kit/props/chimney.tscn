@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_building_kit/models/chimney_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.6000, 1.1000, 0.6000)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.7000, 0.3800, 0.7000)
+
+[node name="chimney" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="chimney"]
+
+[node name="Box" type="CollisionShape3D" parent="chimney/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.0500, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="chimney/chimney_1"]
+
+[node name="Box" type="CollisionShape3D" parent="chimney/chimney_1/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.7900, -0.0000)
+shape = SubResource("box1")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_soviet_block_kit/models/bench_entrance_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(1.9000, 0.9021, 0.5381)
+
+[node name="bench_entrance" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="bench_entrance"]
+
+[node name="Box" type="CollisionShape3D" parent="bench_entrance/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.4511, -0.0490)
+shape = SubResource("box0")

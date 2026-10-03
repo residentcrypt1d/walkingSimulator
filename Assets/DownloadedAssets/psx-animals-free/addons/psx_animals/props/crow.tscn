@@ -1,0 +1,122 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_animals/models/crow_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1046, 0.1273, 0.2431)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0514, 0.0829, 0.0691)
+
+[sub_resource type="BoxShape3D" id="box2"]
+size = Vector3(0.0600, 0.0600, 0.1069)
+
+[sub_resource type="BoxShape3D" id="box3"]
+size = Vector3(0.0200, 0.0066, 0.0470)
+
+[sub_resource type="BoxShape3D" id="box4"]
+size = Vector3(0.0202, 0.0901, 0.2163)
+
+[sub_resource type="BoxShape3D" id="box5"]
+size = Vector3(0.0535, 0.0643, 0.0595)
+
+[sub_resource type="BoxShape3D" id="box6"]
+size = Vector3(0.0139, 0.0504, 0.0373)
+
+[sub_resource type="BoxShape3D" id="box7"]
+size = Vector3(0.0525, 0.0117, 0.0868)
+
+[sub_resource type="BoxShape3D" id="box8"]
+size = Vector3(0.0202, 0.0901, 0.2163)
+
+[sub_resource type="BoxShape3D" id="box9"]
+size = Vector3(0.0535, 0.0643, 0.0595)
+
+[sub_resource type="BoxShape3D" id="box10"]
+size = Vector3(0.0139, 0.0504, 0.0373)
+
+[sub_resource type="BoxShape3D" id="box11"]
+size = Vector3(0.0525, 0.0117, 0.0868)
+
+[sub_resource type="BoxShape3D" id="box12"]
+size = Vector3(0.0810, 0.0304, 0.1440)
+
+[node name="crow" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="crow"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0423, -0.0120)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_neck"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_neck/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0186, -0.0004)
+shape = SubResource("box1")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_neck/crow_head"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_neck/crow_head/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0120, 0.0265)
+shape = SubResource("box2")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_neck/crow_head/crow_jaw"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_neck/crow_head/crow_jaw/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0003, 0.0235)
+shape = SubResource("box3")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_wing_l"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_wing_l/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0024, -0.0219, -0.1018)
+shape = SubResource("box4")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_l"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_l/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009, -0.0066, -0.0007)
+shape = SubResource("box5")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_l/crow_shin_l"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_l/crow_shin_l/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0001, -0.0202, -0.0112)
+shape = SubResource("box6")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_l/crow_shin_l/crow_foot_l"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_l/crow_shin_l/crow_foot_l/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0001, -0.0004, 0.0126)
+shape = SubResource("box7")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_wing_r"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_wing_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0024, -0.0219, -0.1018)
+shape = SubResource("box8")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_r"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0009, -0.0066, -0.0007)
+shape = SubResource("box9")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_r/crow_shin_r"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_r/crow_shin_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0001, -0.0202, -0.0112)
+shape = SubResource("box10")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_leg_r/crow_shin_r/crow_foot_r"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_leg_r/crow_shin_r/crow_foot_r/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0001, -0.0004, 0.0126)
+shape = SubResource("box11")
+
+[node name="Collision" type="StaticBody3D" parent="crow/crow_tail"]
+
+[node name="Box" type="CollisionShape3D" parent="crow/crow_tail/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, -0.0021, -0.0580)
+shape = SubResource("box12")

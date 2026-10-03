@@ -1,0 +1,25 @@
+[remap]
+
+importer="cubemap_texture"
+type="CompressedCubemap"
+uid="uid://b6kxkly5y6y6p"
+path="res://.godot/imported/aurora_green.png-69cf691a58b3da1c4281c75114ad418f.ccube"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://addons/psx_skyboxes_2/cubemaps/aurora_green.png"
+dest_files=["res://.godot/imported/aurora_green.png-69cf691a58b3da1c4281c75114ad418f.ccube"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/arrangement=2

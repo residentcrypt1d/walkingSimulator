@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_mansion_kit/models/portrait_lady_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.8600, 1.1100, 0.0600)
+
+[node name="portrait_lady" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="portrait_lady"]
+
+[node name="Box" type="CollisionShape3D" parent="portrait_lady/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.6000, 0.0300)
+shape = SubResource("box0")

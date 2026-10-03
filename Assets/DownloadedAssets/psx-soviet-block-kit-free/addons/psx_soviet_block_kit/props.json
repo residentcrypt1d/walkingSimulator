@@ -1,0 +1,887 @@
+{
+ "atlas": 2048,
+ "atlas_used": 256,
+ "fps": 30,
+ "props": [
+  {
+   "name": "wall_panel",
+   "title": "Concrete Panel Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "grey panels, black mastic in the joints; wallpaper inside",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_panel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_window_panel",
+   "title": "Concrete Panel Window Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "fits the flats' windows",
+   "tris": 68,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_window_panel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.7,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_panel_1",
+     "parent": "wall_window_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.7,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.7,
+      0.1,
+      0.85
+     ]
+    },
+    {
+     "name": "wall_window_panel_2",
+     "parent": "wall_window_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.7,
+      -0.1,
+      2.35
+     ],
+     "max": [
+      0.7,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_panel_3",
+     "parent": "wall_window_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.7,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_doorway_panel",
+   "title": "Concrete Panel Entrance",
+   "group": "walls",
+   "place": "floor",
+   "note": "1 x 2.2 m, the stairwell's paint inside: fits the doors",
+   "tris": 56,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_doorway_panel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_panel_1",
+     "parent": "wall_doorway_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.5,
+      -0.1,
+      2.2
+     ],
+     "max": [
+      0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_panel_2",
+     "parent": "wall_doorway_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_panel",
+   "title": "Concrete Panel Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 26,
+   "size": [
+    0.2,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_panel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_panel_graffiti",
+   "title": "Panel Wall, Graffiti",
+   "group": "walls",
+   "place": "floor",
+   "note": "a band's name sprayed on it",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_panel_graffiti",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "entrance_canopy",
+   "title": "Entrance Canopy",
+   "group": "balconies",
+   "place": "floor",
+   "note": "a slab on two posts over the entrance, a step under; on an entrance wall",
+   "tris": 76,
+   "size": [
+    2.0,
+    1.4,
+    2.8
+   ],
+   "min": [
+    -1.0,
+    -1.5,
+    -0.13
+   ],
+   "max": [
+    1.0,
+    -0.1,
+    2.67
+   ],
+   "parts": [
+    {
+     "name": "entrance_canopy",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 64,
+     "min": [
+      -1.0,
+      -1.5,
+      0.0
+     ],
+     "max": [
+      1.0,
+      -0.1,
+      2.67
+     ]
+    },
+    {
+     "name": "entrance_canopy_1",
+     "parent": "entrance_canopy",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -1.0,
+      -0.7,
+      -0.13
+     ],
+     "max": [
+      1.0,
+      -0.1,
+      0.01
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "door_entrance",
+   "title": "Entrance Door",
+   "group": "doors",
+   "place": "floor",
+   "note": "steel; needs the intercom: its code opens the lock and it swings out",
+   "tris": 96,
+   "size": [
+    1.14,
+    0.252,
+    2.27
+   ],
+   "min": [
+    -0.57,
+    -0.132,
+    0.0
+   ],
+   "max": [
+    0.57,
+    0.12,
+    2.27
+   ],
+   "parts": [
+    {
+     "name": "door_entrance",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.57,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      -0.49,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_entrance_casing_r",
+     "parent": "door_entrance",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      0.49,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      0.57,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_entrance_casing_top",
+     "parent": "door_entrance",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.51,
+      -0.12,
+      2.19
+     ],
+     "max": [
+      0.51,
+      0.12,
+      2.26
+     ]
+    },
+    {
+     "name": "door_entrance_leaf",
+     "parent": "door_entrance",
+     "pivot": [
+      -0.48,
+      0.0,
+      0.0
+     ],
+     "tris": 60,
+     "min": [
+      -0.48,
+      -0.1319,
+      0.01
+     ],
+     "max": [
+      0.48,
+      0.025,
+      2.19
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.8,
+     "loop": false
+    }
+   ],
+   "use": {
+    "kind": "powered",
+    "clip": "open"
+   }
+  },
+  {
+   "name": "window_curtains",
+   "title": "Curtained Window",
+   "group": "windows",
+   "place": "floor",
+   "note": "net curtains drawn behind it; stays shut",
+   "tris": 312,
+   "size": [
+    1.52,
+    0.53,
+    1.5
+   ],
+   "min": [
+    -0.76,
+    -0.25,
+    0.85
+   ],
+   "max": [
+    0.76,
+    0.28,
+    2.35
+   ],
+   "parts": [
+    {
+     "name": "window_curtains",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 312,
+     "min": [
+      -0.76,
+      -0.25,
+      0.85
+     ],
+     "max": [
+      0.76,
+      0.28,
+      2.35
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "rocket",
+   "title": "Rocket Climber",
+   "group": "playground",
+   "place": "floor",
+   "note": "a cage of pipe up to its nose, 5.3 m, a ladder inside to two decks",
+   "tris": 1154,
+   "size": [
+    2.335,
+    2.168,
+    5.7
+   ],
+   "min": [
+    -1.086,
+    -1.342,
+    0.0
+   ],
+   "max": [
+    1.249,
+    0.826,
+    5.7
+   ],
+   "parts": [
+    {
+     "name": "rocket",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 1154,
+     "min": [
+      -1.086,
+      -1.3416,
+      0.0
+     ],
+     "max": [
+      1.2493,
+      0.826,
+      5.7
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "bench_entrance",
+   "title": "Entrance Bench",
+   "group": "courtyard",
+   "place": "floor",
+   "note": "slats with a back on pipe legs, 1.9 m",
+   "tris": 188,
+   "size": [
+    1.9,
+    0.538,
+    0.902
+   ],
+   "min": [
+    -0.95,
+    -0.22,
+    0.0
+   ],
+   "max": [
+    0.95,
+    0.318,
+    0.902
+   ],
+   "parts": [
+    {
+     "name": "bench_entrance",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 188,
+     "min": [
+      -0.95,
+      -0.22,
+      0.0
+     ],
+     "max": [
+      0.95,
+      0.3181,
+      0.9021
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "bin_container",
+   "title": "Refuse Container",
+   "group": "courtyard",
+   "place": "floor",
+   "note": "green steel, sloping sides, heaped full",
+   "tris": 188,
+   "size": [
+    1.939,
+    1.18,
+    1.123
+   ],
+   "min": [
+    -0.97,
+    -0.59,
+    0.007
+   ],
+   "max": [
+    0.97,
+    0.59,
+    1.13
+   ],
+   "parts": [
+    {
+     "name": "bin_container",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 188,
+     "min": [
+      -0.9696,
+      -0.59,
+      0.0067
+     ],
+     "max": [
+      0.9696,
+      0.59,
+      1.13
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "fence_low",
+   "title": "Low Fence",
+   "group": "courtyard",
+   "place": "floor",
+   "note": "2 m of pipe round a lawn, on a cell's edge",
+   "tris": 240,
+   "size": [
+    2.043,
+    0.05,
+    0.55
+   ],
+   "min": [
+    -1.022,
+    -0.025,
+    0.0
+   ],
+   "max": [
+    1.022,
+    0.025,
+    0.55
+   ],
+   "parts": [
+    {
+     "name": "fence_low",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 240,
+     "min": [
+      -1.0217,
+      -0.025,
+      0.0
+     ],
+     "max": [
+      1.0217,
+      0.025,
+      0.55
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ground_asphalt",
+   "title": "Asphalt",
+   "group": "ground",
+   "place": "floor",
+   "note": "4 by 4 m, a cell's corner on whole metres",
+   "tris": 8,
+   "size": [
+    4.0,
+    4.0,
+    0.0
+   ],
+   "min": [
+    -2.0,
+    -2.0,
+    0.0
+   ],
+   "max": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "ground_asphalt",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -2.0,
+      -2.0,
+      0.0
+     ],
+     "max": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ground_grass",
+   "title": "Worn Grass",
+   "group": "ground",
+   "place": "floor",
+   "note": "4 by 4 m, a cell's corner on whole metres",
+   "tris": 8,
+   "size": [
+    4.0,
+    4.0,
+    0.0
+   ],
+   "min": [
+    -2.0,
+    -2.0,
+    0.0
+   ],
+   "max": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "ground_grass",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -2.0,
+      -2.0,
+      0.0
+     ],
+     "max": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "sign_entrance",
+   "title": "Entrance Plate",
+   "group": "signs",
+   "place": "wall",
+   "note": "the entrance's number and its flats, 5-8: over its door",
+   "tris": 12,
+   "size": [
+    0.6,
+    0.06,
+    0.24
+   ],
+   "min": [
+    -0.3,
+    -0.06,
+    2.68
+   ],
+   "max": [
+    0.3,
+    0.0,
+    2.92
+   ],
+   "parts": [
+    {
+     "name": "sign_entrance",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.3,
+      -0.06,
+      2.68
+     ],
+     "max": [
+      0.3,
+      0.0,
+      2.92
+     ]
+    }
+   ],
+   "anims": []
+  }
+ ]
+}

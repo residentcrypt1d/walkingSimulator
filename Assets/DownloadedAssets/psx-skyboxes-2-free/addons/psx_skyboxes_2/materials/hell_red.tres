@@ -1,0 +1,8 @@
+[gd_resource type="PanoramaSkyMaterial" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://addons/psx_skyboxes_2/panoramas/hell_red.png" id="1"]
+
+[resource]
+resource_name = "hell_red"
+panorama = ExtResource("1")
+filter = false

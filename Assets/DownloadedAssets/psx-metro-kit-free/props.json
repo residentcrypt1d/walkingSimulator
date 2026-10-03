@@ -1,0 +1,910 @@
+{
+ "atlas": 2048,
+ "atlas_used": 128,
+ "fps": 30,
+ "props": [
+  {
+   "name": "floor_granite",
+   "title": "Granite Floor",
+   "group": "floors",
+   "place": "floor",
+   "note": "grey granite slabs half a metre square: the platform's",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_granite",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "floor_granite_band",
+   "title": "Granite Floor, Band",
+   "group": "floors",
+   "place": "floor",
+   "note": "a metre of black granite along its +Y side: two of them face to face make the platform's middle band",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_granite_band",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "platform_edge",
+   "title": "Platform Edge",
+   "group": "floors",
+   "place": "floor",
+   "note": "the granite with its pale edge band to -Y, the lip and the recess under it down to the trackbed, 1.35 m",
+   "tris": 16,
+   "size": [
+    2.0,
+    2.0,
+    1.35
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    -1.35
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "platform_edge",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    },
+    {
+     "name": "platform_edge_1",
+     "parent": "platform_edge",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 6,
+     "min": [
+      -1.0,
+      -1.0,
+      -0.3
+     ],
+     "max": [
+      1.0,
+      -0.6,
+      0.0
+     ]
+    },
+    {
+     "name": "platform_edge_2",
+     "parent": "platform_edge",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 2,
+     "min": [
+      -1.0,
+      -0.6,
+      -1.35
+     ],
+     "max": [
+      1.0,
+      -0.6,
+      -0.3
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ceiling_hall",
+   "title": "Coffered Ceiling",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "the hall's, a coffer a metre; hangs at 4 m",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    4.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    4.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_hall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      4.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      4.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_hall",
+   "title": "Marble Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "white marble over a black skirting, both sides, 4 m",
+   "tris": 36,
+   "size": [
+    2.0,
+    0.2,
+    4.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    4.0
+   ],
+   "parts": [
+    {
+     "name": "wall_hall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 36,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      4.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_hall",
+   "title": "Marble Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 34,
+   "size": [
+    0.2,
+    0.2,
+    4.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    4.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_hall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 34,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      4.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "track_wall",
+   "title": "Track Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "along the track: concrete to the platform's height, a black dado, marble to the ceiling; stands on the trackbed, 5.35 m",
+   "tris": 52,
+   "size": [
+    2.0,
+    0.2,
+    5.35
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    5.35
+   ],
+   "parts": [
+    {
+     "name": "track_wall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 52,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      5.35
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "track_wall_vent",
+   "title": "Track Wall, Vent",
+   "group": "walls",
+   "place": "floor",
+   "note": "a brass ventilation grille high in the marble",
+   "tris": 64,
+   "size": [
+    2.0,
+    0.24,
+    5.35
+   ],
+   "min": [
+    -1.0,
+    -0.14,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    5.35
+   ],
+   "parts": [
+    {
+     "name": "track_wall_vent",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 52,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      5.35
+     ]
+    },
+    {
+     "name": "track_wall_vent_1",
+     "parent": "track_wall_vent",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.5,
+      -0.14,
+      3.95
+     ],
+     "max": [
+      0.5,
+      -0.1,
+      4.55
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "track_post",
+   "title": "Track Wall Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where track walls meet",
+   "tris": 50,
+   "size": [
+    0.2,
+    0.2,
+    5.35
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    5.35
+   ],
+   "parts": [
+    {
+     "name": "track_post",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 50,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      5.35
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "column",
+   "title": "Column",
+   "group": "walls",
+   "place": "floor",
+   "note": "square, white marble on black granite, the capital flared; on a corner, 4 m",
+   "tris": 66,
+   "size": [
+    1.088,
+    1.088,
+    4.0
+   ],
+   "min": [
+    -0.544,
+    -0.544,
+    0.0
+   ],
+   "max": [
+    0.544,
+    0.544,
+    4.0
+   ],
+   "parts": [
+    {
+     "name": "column",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 34,
+     "min": [
+      -0.3,
+      -0.3,
+      0.0
+     ],
+     "max": [
+      0.3,
+      0.3,
+      3.4
+     ]
+    },
+    {
+     "name": "column_1",
+     "parent": "column",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.35,
+      -0.35,
+      0.0
+     ],
+     "max": [
+      0.35,
+      0.35,
+      0.12
+     ]
+    },
+    {
+     "name": "column_2",
+     "parent": "column",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -0.544,
+      -0.544,
+      3.4
+     ],
+     "max": [
+      0.544,
+      0.544,
+      4.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "track",
+   "title": "Track",
+   "group": "track",
+   "place": "floor",
+   "note": "2 m of 1520 mm track on the trackbed of a 4 m bay, the contact rail under its guard; the pivot on the bed 1.35 m under the platform",
+   "tris": 168,
+   "size": [
+    2.0,
+    4.0,
+    0.355
+   ],
+   "min": [
+    -1.0,
+    -2.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    2.0,
+    0.355
+   ],
+   "parts": [
+    {
+     "name": "track",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -1.0,
+      -2.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      2.0,
+      0.0
+     ]
+    },
+    {
+     "name": "track_1",
+     "parent": "track",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 76,
+     "min": [
+      -1.0,
+      -0.75,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.75,
+      0.25
+     ]
+    },
+    {
+     "name": "track_2",
+     "parent": "track",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 76,
+     "min": [
+      -1.0,
+      -1.23,
+      0.0
+     ],
+     "max": [
+      1.0,
+      -1.0,
+      0.355
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "chandelier",
+   "title": "Chandelier",
+   "group": "hall",
+   "place": "floor",
+   "note": "bronze, eight frosted globes round a bowl, hung from the 4 m ceiling; lit",
+   "tris": 826,
+   "size": [
+    1.2,
+    1.2,
+    1.1
+   ],
+   "min": [
+    -0.6,
+    -0.6,
+    2.9
+   ],
+   "max": [
+    0.6,
+    0.6,
+    4.0
+   ],
+   "parts": [
+    {
+     "name": "chandelier",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 314,
+     "min": [
+      -0.5054,
+      -0.5054,
+      2.9
+     ],
+     "max": [
+      0.5054,
+      0.5054,
+      4.0
+     ]
+    },
+    {
+     "name": "chandelier_lamp",
+     "parent": "chandelier",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 512,
+     "min": [
+      -0.6,
+      -0.6,
+      3.18
+     ],
+     "max": [
+      0.6,
+      0.6,
+      3.38
+     ]
+    }
+   ],
+   "anims": [],
+   "use": {
+    "kind": "powered",
+    "on": true,
+    "lit": [
+     "chandelier_lamp"
+    ]
+   }
+  },
+  {
+   "name": "station_name",
+   "title": "Station Name",
+   "group": "hall",
+   "place": "wall",
+   "note": "\u0417\u0410\u0420\u0415\u0427\u041d\u0410\u042f in brass letters, 2.8 m long; on the track wall at 2.5 m",
+   "tris": 532,
+   "size": [
+    2.79,
+    0.04,
+    0.45
+   ],
+   "min": [
+    -1.395,
+    -0.04,
+    2.495
+   ],
+   "max": [
+    1.395,
+    0.0,
+    2.945
+   ],
+   "parts": [
+    {
+     "name": "station_name",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 532,
+     "min": [
+      -1.395,
+      -0.04,
+      2.495
+     ],
+     "max": [
+      1.395,
+      0.0,
+      2.945
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "bench_hall",
+   "title": "Hall Bench",
+   "group": "hall",
+   "place": "floor",
+   "note": "two oak seats back to back on bronze ends, 2 m",
+   "tris": 288,
+   "size": [
+    2.06,
+    0.9,
+    0.92
+   ],
+   "min": [
+    -1.03,
+    -0.45,
+    0.0
+   ],
+   "max": [
+    1.03,
+    0.45,
+    0.92
+   ],
+   "parts": [
+    {
+     "name": "bench_hall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 288,
+     "min": [
+      -1.03,
+      -0.45,
+      0.0
+     ],
+     "max": [
+      1.03,
+      0.45,
+      0.92
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "fire_cabinet",
+   "title": "Fire Hose Cabinet",
+   "group": "hall",
+   "place": "wall",
+   "note": "red steel, \u041f\u041a; its door opens on the hose",
+   "tris": 68,
+   "size": [
+    0.6,
+    0.22,
+    0.8
+   ],
+   "min": [
+    -0.3,
+    -0.22,
+    0.8
+   ],
+   "max": [
+    0.3,
+    0.0,
+    1.6
+   ],
+   "parts": [
+    {
+     "name": "fire_cabinet",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.3,
+      -0.2,
+      0.8
+     ],
+     "max": [
+      0.3,
+      0.0,
+      1.6
+     ]
+    },
+    {
+     "name": "fire_cabinet_1",
+     "parent": "fire_cabinet",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 44,
+     "min": [
+      -0.2,
+      -0.13,
+      1.05
+     ],
+     "max": [
+      0.2,
+      -0.05,
+      1.45
+     ]
+    },
+    {
+     "name": "fire_cabinet_door",
+     "parent": "fire_cabinet",
+     "pivot": [
+      -0.3,
+      -0.2,
+      1.2
+     ],
+     "tris": 12,
+     "min": [
+      -0.3,
+      -0.22,
+      0.8
+     ],
+     "max": [
+      0.3,
+      -0.2,
+      1.6
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.2,
+     "loop": false
+    }
+   ]
+  }
+ ]
+}

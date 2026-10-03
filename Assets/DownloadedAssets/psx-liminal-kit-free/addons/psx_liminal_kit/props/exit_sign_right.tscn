@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_liminal_kit/models/exit_sign_right_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_liminal_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.4000, 0.1600, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.3800, 0.1400, 0.0050)
+
+[node name="exit_sign_right" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "powered"
+on = true
+lit = PackedStringArray("exit_sign_right_lamp")
+
+[node name="Collision" type="StaticBody3D" parent="exit_sign_right"]
+
+[node name="Box" type="CollisionShape3D" parent="exit_sign_right/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.5500, 0.0300)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="exit_sign_right/exit_sign_right_lamp"]
+
+[node name="Box" type="CollisionShape3D" parent="exit_sign_right/exit_sign_right_lamp/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 2.5500, 0.0610)
+shape = SubResource("box1")

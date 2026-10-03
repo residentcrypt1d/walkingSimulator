@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_japanese_town_kit/models/vending_drinks_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_japanese_town_kit/machine.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(1.0000, 1.8300, 0.7900)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.1200, 0.0660, 0.0660)
+
+[node name="vending_drinks" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "button"
+clip = "press"
+
+[node name="Collision" type="StaticBody3D" parent="vending_drinks"]
+
+[node name="Box" type="CollisionShape3D" parent="vending_drinks/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.9150, 0.0350)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="vending_drinks/vending_drinks_can"]
+
+[node name="Box" type="CollisionShape3D" parent="vending_drinks/vending_drinks_can/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0000, 0.0000)
+shape = SubResource("box1")

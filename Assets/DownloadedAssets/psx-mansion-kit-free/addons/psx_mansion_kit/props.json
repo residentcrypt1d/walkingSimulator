@@ -1,0 +1,1038 @@
+{
+ "atlas": 1024,
+ "atlas_used": 192,
+ "fps": 30,
+ "props": [
+  {
+   "name": "floor_parquet",
+   "title": "Parquet Floor",
+   "group": "floors",
+   "place": "floor",
+   "note": "oak basketweave: the dining room, the library",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_parquet",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ceiling_coffered",
+   "title": "Coffered Ceiling",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "dark oak: the hall, library and dining room",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    3.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_coffered",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      3.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_damask",
+   "title": "Damask Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "oxblood damask over oak wainscot, both sides",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_damask",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_doorway_damask",
+   "title": "Damask Doorway",
+   "group": "walls",
+   "place": "floor",
+   "note": "fits the panelled doors",
+   "tris": 56,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_doorway_damask",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_damask_1",
+     "parent": "wall_doorway_damask",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.5,
+      -0.1,
+      2.2
+     ],
+     "max": [
+      0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_doorway_damask_2",
+     "parent": "wall_doorway_damask",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_window_damask",
+   "title": "Damask Window Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "fits the tall windows; ashlar outside",
+   "tris": 68,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_window_damask",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_damask_1",
+     "parent": "wall_window_damask",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.5,
+      0.1,
+      0.7
+     ]
+    },
+    {
+     "name": "wall_window_damask_2",
+     "parent": "wall_window_damask",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.5,
+      -0.1,
+      2.6
+     ],
+     "max": [
+      0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_window_damask_3",
+     "parent": "wall_window_damask",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_damask",
+   "title": "Damask Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 26,
+   "size": [
+    0.2,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_damask",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "door_panel",
+   "title": "Panelled Door",
+   "group": "doors",
+   "place": "floor",
+   "note": "six-panel oak, a brass knob; swings open",
+   "tris": 224,
+   "size": [
+    1.14,
+    0.24,
+    2.27
+   ],
+   "min": [
+    -0.57,
+    -0.12,
+    0.0
+   ],
+   "max": [
+    0.57,
+    0.12,
+    2.27
+   ],
+   "parts": [
+    {
+     "name": "door_panel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.57,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      -0.49,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_panel_casing_r",
+     "parent": "door_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      0.49,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      0.57,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_panel_casing_top",
+     "parent": "door_panel",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.51,
+      -0.12,
+      2.19
+     ],
+     "max": [
+      0.51,
+      0.12,
+      2.26
+     ]
+    },
+    {
+     "name": "door_panel_leaf",
+     "parent": "door_panel",
+     "pivot": [
+      -0.48,
+      0.0,
+      0.0
+     ],
+     "tris": 188,
+     "min": [
+      -0.48,
+      -0.075,
+      0.01
+     ],
+     "max": [
+      0.48,
+      0.075,
+      2.19
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "window_tall",
+   "title": "Tall Window",
+   "group": "windows",
+   "place": "floor",
+   "note": "a six-over-six sash; the lower sash slides up",
+   "tris": 224,
+   "size": [
+    1.16,
+    0.3,
+    1.915
+   ],
+   "min": [
+    -0.58,
+    -0.18,
+    0.685
+   ],
+   "max": [
+    0.58,
+    0.12,
+    2.6
+   ],
+   "parts": [
+    {
+     "name": "window_tall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 136,
+     "min": [
+      -0.58,
+      -0.18,
+      0.685
+     ],
+     "max": [
+      0.58,
+      0.12,
+      2.6
+     ]
+    },
+    {
+     "name": "window_tall_lower",
+     "parent": "window_tall",
+     "pivot": [
+      0.0,
+      0.0,
+      0.7
+     ],
+     "tris": 88,
+     "min": [
+      -0.5,
+      -0.02,
+      0.73
+     ],
+     "max": [
+      0.5,
+      0.02,
+      1.7
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "suit_of_armour",
+   "title": "Suit of Armour",
+   "group": "hall",
+   "place": "floor",
+   "note": "on its plinth, a halberd; its helm turns to watch",
+   "tris": 678,
+   "size": [
+    0.72,
+    0.5,
+    2.56
+   ],
+   "min": [
+    -0.36,
+    -0.25,
+    0.0
+   ],
+   "max": [
+    0.36,
+    0.25,
+    2.56
+   ],
+   "parts": [
+    {
+     "name": "suit_of_armour",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 574,
+     "min": [
+      -0.36,
+      -0.25,
+      0.0
+     ],
+     "max": [
+      0.36,
+      0.25,
+      2.56
+     ]
+    },
+    {
+     "name": "suit_of_armour_helm",
+     "parent": "suit_of_armour",
+     "pivot": [
+      0.0,
+      0.0,
+      1.5
+     ],
+     "tris": 104,
+     "min": [
+      -0.12,
+      -0.125,
+      1.5
+     ],
+     "max": [
+      0.12,
+      0.1141,
+      1.86
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "watch",
+     "seconds": 5.0,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "fireplace",
+   "title": "Fireplace",
+   "group": "hall",
+   "place": "wall",
+   "note": "marble, logs in the grate; burning",
+   "tris": 314,
+   "size": [
+    1.9,
+    0.9,
+    1.4
+   ],
+   "min": [
+    -0.95,
+    -0.9,
+    0.0
+   ],
+   "max": [
+    0.95,
+    0.0,
+    1.4
+   ],
+   "parts": [
+    {
+     "name": "fireplace",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 278,
+     "min": [
+      -0.95,
+      -0.9,
+      0.0
+     ],
+     "max": [
+      0.95,
+      0.0,
+      1.4
+     ]
+    },
+    {
+     "name": "fireplace_flame0",
+     "parent": "fireplace",
+     "pivot": [
+      -0.14,
+      -0.2,
+      0.22
+     ],
+     "tris": 12,
+     "min": [
+      -0.2849,
+      -0.3056,
+      0.22
+     ],
+     "max": [
+      0.0049,
+      -0.0544,
+      0.62
+     ]
+    },
+    {
+     "name": "fireplace_flame1",
+     "parent": "fireplace",
+     "pivot": [
+      0.12,
+      -0.2,
+      0.22
+     ],
+     "tris": 12,
+     "min": [
+      -0.007,
+      -0.2868,
+      0.22
+     ],
+     "max": [
+      0.247,
+      -0.0733,
+      0.56
+     ]
+    },
+    {
+     "name": "fireplace_flame2",
+     "parent": "fireplace",
+     "pivot": [
+      0.0,
+      -0.2,
+      0.22
+     ],
+     "tris": 12,
+     "min": [
+      -0.1631,
+      -0.2905,
+      0.22
+     ],
+     "max": [
+      0.1632,
+      -0.0697,
+      0.7
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "burn",
+     "seconds": 1.2,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "name": "sconce_candle",
+   "title": "Candle Sconce",
+   "group": "lights",
+   "place": "wall",
+   "note": "two candles on a brass arm",
+   "tris": 164,
+   "size": [
+    0.34,
+    0.146,
+    0.29
+   ],
+   "min": [
+    -0.17,
+    -0.146,
+    1.73
+   ],
+   "max": [
+    0.17,
+    0.0,
+    2.02
+   ],
+   "parts": [
+    {
+     "name": "sconce_candle",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 164,
+     "min": [
+      -0.17,
+      -0.146,
+      1.73
+     ],
+     "max": [
+      0.17,
+      0.0,
+      2.02
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "candelabrum",
+   "title": "Standing Candelabrum",
+   "group": "lights",
+   "place": "floor",
+   "note": "iron, five candles",
+   "tris": 466,
+   "size": [
+    0.52,
+    0.492,
+    1.675
+   ],
+   "min": [
+    -0.25,
+    -0.246,
+    0.0
+   ],
+   "max": [
+    0.27,
+    0.246,
+    1.675
+   ],
+   "parts": [
+    {
+     "name": "candelabrum",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 466,
+     "min": [
+      -0.25,
+      -0.246,
+      0.0
+     ],
+     "max": [
+      0.27,
+      0.246,
+      1.675
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "portrait_lady",
+   "title": "Portrait of the Lady",
+   "group": "paintings",
+   "place": "wall",
+   "note": "his wife, in grey silk",
+   "tris": 50,
+   "size": [
+    0.86,
+    0.06,
+    1.11
+   ],
+   "min": [
+    -0.43,
+    -0.06,
+    1.045
+   ],
+   "max": [
+    0.43,
+    0.0,
+    2.155
+   ],
+   "parts": [
+    {
+     "name": "portrait_lady",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 50,
+     "min": [
+      -0.43,
+      -0.06,
+      1.045
+     ],
+     "max": [
+      0.43,
+      0.0,
+      2.155
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "cradle",
+   "title": "Cradle",
+   "group": "bedrooms",
+   "place": "floor",
+   "note": "on rockers; it rocks by itself",
+   "tris": 220,
+   "size": [
+    0.651,
+    0.98,
+    0.788
+   ],
+   "min": [
+    -0.325,
+    -0.49,
+    0.0
+   ],
+   "max": [
+    0.325,
+    0.49,
+    0.788
+   ],
+   "parts": [
+    {
+     "name": "cradle",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 220,
+     "min": [
+      -0.3253,
+      -0.49,
+      0.0
+     ],
+     "max": [
+      0.3253,
+      0.49,
+      0.7875
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "rock",
+     "seconds": 3.0,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "name": "music_box",
+   "title": "Music Box",
+   "group": "bedrooms",
+   "place": "item",
+   "note": "its lid opens; the dancer turns",
+   "tris": 106,
+   "size": [
+    0.22,
+    0.15,
+    0.115
+   ],
+   "min": [
+    -0.11,
+    -0.075,
+    0.0
+   ],
+   "max": [
+    0.11,
+    0.075,
+    0.115
+   ],
+   "parts": [
+    {
+     "name": "music_box",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 14,
+     "min": [
+      -0.11,
+      -0.075,
+      0.0
+     ],
+     "max": [
+      0.11,
+      0.075,
+      0.091
+     ]
+    },
+    {
+     "name": "music_box_lid",
+     "parent": "music_box",
+     "pivot": [
+      0.0,
+      0.075,
+      0.09
+     ],
+     "tris": 12,
+     "min": [
+      -0.11,
+      -0.075,
+      0.09
+     ],
+     "max": [
+      0.11,
+      0.075,
+      0.115
+     ]
+    },
+    {
+     "name": "music_box_dancer",
+     "parent": "music_box",
+     "pivot": [
+      0.0,
+      0.0,
+      0.002
+     ],
+     "tris": 80,
+     "min": [
+      -0.025,
+      -0.0173,
+      0.002
+     ],
+     "max": [
+      0.025,
+      0.0173,
+      0.087
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.2,
+     "loop": false
+    },
+    {
+     "name": "play",
+     "seconds": 4.0,
+     "loop": true
+    }
+   ]
+  }
+ ]
+}

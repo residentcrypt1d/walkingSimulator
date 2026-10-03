@@ -1,0 +1,769 @@
+{
+ "atlas": 2048,
+ "atlas_used": 144,
+ "fps": 30,
+ "props": [
+  {
+   "name": "wall_board",
+   "title": "Cedar and Plaster Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "dark cedar boards to 1.5 m, earthen plaster over; a sand wall inside: the houses",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_board",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_board",
+   "title": "Cedar and Plaster Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 26,
+   "size": [
+    0.2,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_board",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_block",
+   "title": "Block Wall",
+   "group": "street",
+   "place": "floor",
+   "note": "concrete block 1.5 m high, a course of hana blocks along its top; on a cell's edge",
+   "tris": 32,
+   "size": [
+    2.0,
+    0.2,
+    1.55
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    1.55
+   ],
+   "parts": [
+    {
+     "name": "wall_block",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.075,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.075,
+      1.5
+     ]
+    },
+    {
+     "name": "wall_block_1",
+     "parent": "wall_block",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -1.0,
+      -0.1,
+      1.5
+     ],
+     "max": [
+      1.0,
+      0.1,
+      1.55
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_block_post",
+   "title": "Block Wall Post",
+   "group": "street",
+   "place": "floor",
+   "note": "ends a block wall or turns its corner",
+   "tris": 30,
+   "size": [
+    0.24,
+    0.24,
+    1.56
+   ],
+   "min": [
+    -0.12,
+    -0.12,
+    0.0
+   ],
+   "max": [
+    0.12,
+    0.12,
+    1.56
+   ],
+   "parts": [
+    {
+     "name": "wall_block_post",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 18,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      1.5
+     ]
+    },
+    {
+     "name": "wall_block_post_1",
+     "parent": "wall_block_post",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.12,
+      -0.12,
+      1.5
+     ],
+     "max": [
+      0.12,
+      0.12,
+      1.56
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "gatepost",
+   "title": "Gatepost",
+   "group": "street",
+   "place": "floor",
+   "note": "concrete, the name plate \u4f50\u85e4 and the bell push; either side of a gap in a wall",
+   "tris": 48,
+   "size": [
+    0.44,
+    0.44,
+    1.78
+   ],
+   "min": [
+    -0.22,
+    -0.22,
+    0.0
+   ],
+   "max": [
+    0.22,
+    0.22,
+    1.78
+   ],
+   "parts": [
+    {
+     "name": "gatepost",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 48,
+     "min": [
+      -0.22,
+      -0.22,
+      0.0
+     ],
+     "max": [
+      0.22,
+      0.22,
+      1.78
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ground_lane",
+   "title": "Lane",
+   "group": "ground",
+   "place": "floor",
+   "note": "4 m of a country lane along X, 4 m across, its white edge lines",
+   "tris": 8,
+   "size": [
+    4.0,
+    4.0,
+    0.0
+   ],
+   "min": [
+    -2.0,
+    -2.0,
+    0.0
+   ],
+   "max": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "ground_lane",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -2.0,
+      -2.0,
+      0.0
+     ],
+     "max": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ground_gravel",
+   "title": "Gravel",
+   "group": "ground",
+   "place": "floor",
+   "note": "4 by 4 m: the yards, the station's forecourt",
+   "tris": 8,
+   "size": [
+    4.0,
+    4.0,
+    0.0
+   ],
+   "min": [
+    -2.0,
+    -2.0,
+    0.0
+   ],
+   "max": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "ground_gravel",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -2.0,
+      -2.0,
+      0.0
+     ],
+     "max": [
+      2.0,
+      2.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "marking_stop",
+   "title": "Road Marking, Stop",
+   "group": "ground",
+   "place": "floor",
+   "note": "\u6b62\u307e\u308c and the stop line beyond it, painted; on a lane, read from -Y",
+   "tris": 4,
+   "size": [
+    2.4,
+    1.85,
+    0.0
+   ],
+   "min": [
+    -1.2,
+    -0.7,
+    0.006
+   ],
+   "max": [
+    1.2,
+    1.15,
+    0.006
+   ],
+   "parts": [
+    {
+     "name": "marking_stop",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 4,
+     "min": [
+      -1.2,
+      -0.7,
+      0.006
+     ],
+     "max": [
+      1.2,
+      1.15,
+      0.006
+     ]
+    }
+   ],
+   "anims": [],
+   "solid": false
+  },
+  {
+   "name": "gutter",
+   "title": "Gutter",
+   "group": "ground",
+   "place": "floor",
+   "note": "2 m of concrete U-gutter along X, lidded, a grate in it; along a lane's edge",
+   "tris": 60,
+   "size": [
+    2.0,
+    0.36,
+    0.07
+   ],
+   "min": [
+    -1.0,
+    -0.18,
+    -0.04
+   ],
+   "max": [
+    1.0,
+    0.18,
+    0.03
+   ],
+   "parts": [
+    {
+     "name": "gutter",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 60,
+     "min": [
+      -1.0,
+      -0.18,
+      -0.04
+     ],
+     "max": [
+      1.0,
+      0.18,
+      0.03
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "utility_pole",
+   "title": "Utility Pole",
+   "group": "poles",
+   "place": "floor",
+   "note": "concrete, 9 m, the crossarm at 8.4 m, its plates; the wires along X",
+   "tris": 388,
+   "size": [
+    0.36,
+    1.8,
+    9.0
+   ],
+   "min": [
+    -0.18,
+    -0.9,
+    0.0
+   ],
+   "max": [
+    0.18,
+    0.9,
+    9.0
+   ],
+   "parts": [
+    {
+     "name": "utility_pole",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 388,
+     "min": [
+      -0.18,
+      -0.9,
+      0.0
+     ],
+     "max": [
+      0.18,
+      0.9,
+      9.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wires",
+   "title": "Power Lines",
+   "group": "poles",
+   "place": "floor",
+   "note": "a span of three wires and the phone cable, 8 m along X from a pole to the next; at a pole's foot",
+   "tris": 272,
+   "size": [
+    8.009,
+    1.324,
+    3.107
+   ],
+   "min": [
+    -0.005,
+    -0.662,
+    5.475
+   ],
+   "max": [
+    8.005,
+    0.662,
+    8.582
+   ],
+   "parts": [
+    {
+     "name": "wires",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 272,
+     "min": [
+      -0.0047,
+      -0.662,
+      5.475
+     ],
+     "max": [
+      8.0047,
+      0.662,
+      8.5819
+     ]
+    }
+   ],
+   "anims": [],
+   "solid": false
+  },
+  {
+   "name": "curve_mirror",
+   "title": "Curve Mirror",
+   "group": "street",
+   "place": "floor",
+   "note": "a round mirror on an orange pole, 3 m: at a blind corner",
+   "tris": 108,
+   "size": [
+    0.88,
+    0.28,
+    3.15
+   ],
+   "min": [
+    -0.44,
+    -0.24,
+    0.0
+   ],
+   "max": [
+    0.44,
+    0.04,
+    3.15
+   ],
+   "parts": [
+    {
+     "name": "curve_mirror",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 108,
+     "min": [
+      -0.44,
+      -0.24,
+      0.0
+     ],
+     "max": [
+      0.44,
+      0.04,
+      3.15
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "post_box",
+   "title": "Post Box",
+   "group": "street",
+   "place": "floor",
+   "note": "the round red post box, \u3012",
+   "tris": 152,
+   "size": [
+    0.5,
+    0.5,
+    1.37
+   ],
+   "min": [
+    -0.25,
+    -0.25,
+    0.0
+   ],
+   "max": [
+    0.25,
+    0.25,
+    1.37
+   ],
+   "parts": [
+    {
+     "name": "post_box",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 152,
+     "min": [
+      -0.25,
+      -0.25,
+      0.0
+     ],
+     "max": [
+      0.25,
+      0.25,
+      1.37
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "vending_drinks",
+   "title": "Drinks Machine",
+   "group": "vending",
+   "place": "floor",
+   "note": "the cans lit in rows, \u3064\u3081\u305f\u3044; pressed, a can drops (press)",
+   "tris": 64,
+   "size": [
+    1.0,
+    0.79,
+    1.83
+   ],
+   "min": [
+    -0.5,
+    -0.43,
+    0.0
+   ],
+   "max": [
+    0.5,
+    0.36,
+    1.83
+   ],
+   "parts": [
+    {
+     "name": "vending_drinks",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 36,
+     "min": [
+      -0.5,
+      -0.43,
+      0.0
+     ],
+     "max": [
+      0.5,
+      0.36,
+      1.83
+     ]
+    },
+    {
+     "name": "vending_drinks_can",
+     "parent": "vending_drinks",
+     "pivot": [
+      0.0,
+      -0.3,
+      0.95
+     ],
+     "tris": 28,
+     "min": [
+      -0.06,
+      -0.333,
+      0.917
+     ],
+     "max": [
+      0.06,
+      -0.267,
+      0.983
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "press",
+     "seconds": 0.9,
+     "loop": false
+    }
+   ],
+   "use": {
+    "kind": "button",
+    "clip": "press"
+   }
+  },
+  {
+   "name": "can_bin",
+   "title": "Can Bin",
+   "group": "vending",
+   "place": "floor",
+   "note": "\u3042\u304d\u304b\u3093, by the machines",
+   "tris": 40,
+   "size": [
+    0.5,
+    0.4,
+    0.82
+   ],
+   "min": [
+    -0.25,
+    -0.2,
+    0.0
+   ],
+   "max": [
+    0.25,
+    0.2,
+    0.82
+   ],
+   "parts": [
+    {
+     "name": "can_bin",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 40,
+     "min": [
+      -0.25,
+      -0.2,
+      0.0
+     ],
+     "max": [
+      0.25,
+      0.2,
+      0.82
+     ]
+    }
+   ],
+   "anims": []
+  }
+ ]
+}

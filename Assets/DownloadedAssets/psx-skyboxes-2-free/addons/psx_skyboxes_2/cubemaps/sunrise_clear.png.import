@@ -1,0 +1,25 @@
+[remap]
+
+importer="cubemap_texture"
+type="CompressedCubemap"
+uid="uid://bha1ch6budh2g"
+path="res://.godot/imported/sunrise_clear.png-8360646052e4ed62c105665043c1033e.ccube"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://addons/psx_skyboxes_2/cubemaps/sunrise_clear.png"
+dest_files=["res://.godot/imported/sunrise_clear.png-8360646052e4ed62c105665043c1033e.ccube"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/arrangement=2

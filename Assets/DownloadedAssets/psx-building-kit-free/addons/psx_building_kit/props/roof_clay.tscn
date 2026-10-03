@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_building_kit/models/roof_clay_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(2.0000, 2.0375, 5.1400)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(2.0000, 0.2200, 0.2200)
+
+[node name="roof_clay" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="roof_clay"]
+
+[node name="Box" type="CollisionShape3D" parent="roof_clay/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.5613, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="roof_clay/roof_clay_1"]
+
+[node name="Box" type="CollisionShape3D" parent="roof_clay/roof_clay_1/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 1.5500, -0.0000)
+shape = SubResource("box1")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_soviet_block_kit/models/bin_container_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(1.9392, 1.1233, 1.1800)
+
+[node name="bin_container" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="bin_container"]
+
+[node name="Box" type="CollisionShape3D" parent="bin_container/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.5683, -0.0000)
+shape = SubResource("box0")

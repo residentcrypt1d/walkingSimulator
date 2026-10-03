@@ -1,0 +1,1003 @@
+{
+ "atlas": 1024,
+ "atlas_used": 160,
+ "fps": 30,
+ "props": [
+  {
+   "name": "floor_carpet_yellow",
+   "title": "Yellow Carpet Floor",
+   "group": "floors",
+   "place": "floor",
+   "note": "the yellow rooms' mustard carpet, damp",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_carpet_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "floor_carpet_damp",
+   "title": "Soaked Carpet Floor",
+   "group": "floors",
+   "place": "floor",
+   "note": "water standing in it",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.0
+   ],
+   "parts": [
+    {
+     "name": "floor_carpet_damp",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ceiling_yellow",
+   "title": "Yellow Ceiling",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "acoustic tiles gone yellow, at 3 m",
+   "tris": 8,
+   "size": [
+    2.0,
+    2.0,
+    0.0
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    3.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      3.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "ceiling_yellow_light",
+   "title": "Yellow Ceiling, Light",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "a fluorescent panel in it; lit, it glows",
+   "tris": 28,
+   "size": [
+    2.0,
+    2.0,
+    0.032
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    2.968
+   ],
+   "max": [
+    1.0,
+    1.0,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "ceiling_yellow_light",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 8,
+     "min": [
+      -1.0,
+      -1.0,
+      3.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      3.0
+     ]
+    },
+    {
+     "name": "ceiling_yellow_light_1",
+     "parent": "ceiling_yellow_light",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 10,
+     "min": [
+      -0.6,
+      -0.3,
+      2.97
+     ],
+     "max": [
+      0.6,
+      0.3,
+      3.0
+     ]
+    },
+    {
+     "name": "ceiling_yellow_light_lamp",
+     "parent": "ceiling_yellow_light",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 10,
+     "min": [
+      -0.58,
+      -0.28,
+      2.968
+     ],
+     "max": [
+      0.58,
+      0.28,
+      2.97
+     ]
+    }
+   ],
+   "anims": [],
+   "use": {
+    "kind": "powered",
+    "on": true,
+    "lit": [
+     "ceiling_yellow_light_lamp"
+    ]
+   }
+  },
+  {
+   "name": "ceiling_yellow_missing",
+   "title": "Yellow Ceiling, Tile Missing",
+   "group": "ceilings",
+   "place": "floor",
+   "note": "a tile gone, the void over it",
+   "tris": 40,
+   "size": [
+    2.0,
+    2.0,
+    0.953
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    2.548
+   ],
+   "max": [
+    1.0,
+    1.0,
+    3.502
+   ],
+   "parts": [
+    {
+     "name": "ceiling_yellow_missing",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 10,
+     "min": [
+      -1.0,
+      -1.0,
+      3.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      3.0
+     ]
+    },
+    {
+     "name": "ceiling_yellow_missing_1",
+     "parent": "ceiling_yellow_missing",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 30,
+     "min": [
+      0.0,
+      0.0,
+      2.5483
+     ],
+     "max": [
+      0.5,
+      0.5,
+      3.5016
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_yellow",
+   "title": "Yellow Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "yellow wallpaper both sides, a beige skirting",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_yellow_stained",
+   "title": "Stained Yellow Wall",
+   "group": "walls",
+   "place": "floor",
+   "note": "water run down it",
+   "tris": 28,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_yellow_stained",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 28,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_yellow_doorway",
+   "title": "Yellow Doorway",
+   "group": "walls",
+   "place": "floor",
+   "note": "fits the doors",
+   "tris": 56,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_yellow_doorway",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_yellow_doorway_1",
+     "parent": "wall_yellow_doorway",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.5,
+      -0.1,
+      2.2
+     ],
+     "max": [
+      0.5,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_yellow_doorway_2",
+     "parent": "wall_yellow_doorway",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.5,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_yellow_opening",
+   "title": "Yellow Opening",
+   "group": "walls",
+   "place": "floor",
+   "note": "a 1.6 m way through, no door",
+   "tris": 56,
+   "size": [
+    2.0,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -1.0,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    1.0,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_yellow_opening",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      -1.0,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      -0.8,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_yellow_opening_1",
+     "parent": "wall_yellow_opening",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 16,
+     "min": [
+      -0.8,
+      -0.1,
+      2.4
+     ],
+     "max": [
+      0.8,
+      0.1,
+      3.0
+     ]
+    },
+    {
+     "name": "wall_yellow_opening_2",
+     "parent": "wall_yellow_opening",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 20,
+     "min": [
+      0.8,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      1.0,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "wall_post_yellow",
+   "title": "Yellow Post",
+   "group": "walls",
+   "place": "floor",
+   "note": "fills the corner where walls meet",
+   "tris": 26,
+   "size": [
+    0.2,
+    0.2,
+    3.0
+   ],
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "wall_post_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.1,
+      -0.1,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "pillar_yellow",
+   "title": "Yellow Pillar",
+   "group": "walls",
+   "place": "floor",
+   "note": "0.6 m square, floor to ceiling, in a room's middle",
+   "tris": 26,
+   "size": [
+    0.6,
+    0.6,
+    3.0
+   ],
+   "min": [
+    -0.3,
+    -0.3,
+    0.0
+   ],
+   "max": [
+    0.3,
+    0.3,
+    3.0
+   ],
+   "parts": [
+    {
+     "name": "pillar_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 26,
+     "min": [
+      -0.3,
+      -0.3,
+      0.0
+     ],
+     "max": [
+      0.3,
+      0.3,
+      3.0
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "door_yellow",
+   "title": "Yellow Room Door",
+   "group": "doors",
+   "place": "floor",
+   "note": "painted to match the wallpaper; swings open",
+   "tris": 128,
+   "size": [
+    1.14,
+    0.24,
+    2.27
+   ],
+   "min": [
+    -0.57,
+    -0.12,
+    0.0
+   ],
+   "max": [
+    0.57,
+    0.12,
+    2.27
+   ],
+   "parts": [
+    {
+     "name": "door_yellow",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.57,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      -0.49,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_yellow_casing_r",
+     "parent": "door_yellow",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      0.49,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      0.57,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_yellow_casing_top",
+     "parent": "door_yellow",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.51,
+      -0.12,
+      2.19
+     ],
+     "max": [
+      0.51,
+      0.12,
+      2.26
+     ]
+    },
+    {
+     "name": "door_yellow_leaf",
+     "parent": "door_yellow",
+     "pivot": [
+      -0.48,
+      0.0,
+      0.0
+     ],
+     "tris": 92,
+     "min": [
+      -0.48,
+      -0.0725,
+      0.01
+     ],
+     "max": [
+      0.48,
+      0.0525,
+      2.19
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "door_nowhere",
+   "title": "Door to Nowhere",
+   "group": "doors",
+   "place": "floor",
+   "note": "its frame stands on its own, no wall; swings open on more room",
+   "tris": 128,
+   "size": [
+    1.14,
+    0.24,
+    2.27
+   ],
+   "min": [
+    -0.57,
+    -0.12,
+    0.0
+   ],
+   "max": [
+    0.57,
+    0.12,
+    2.27
+   ],
+   "parts": [
+    {
+     "name": "door_nowhere",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.57,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      -0.49,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_nowhere_casing_r",
+     "parent": "door_nowhere",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      0.49,
+      -0.12,
+      0.0
+     ],
+     "max": [
+      0.57,
+      0.12,
+      2.27
+     ]
+    },
+    {
+     "name": "door_nowhere_casing_top",
+     "parent": "door_nowhere",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.51,
+      -0.12,
+      2.19
+     ],
+     "max": [
+      0.51,
+      0.12,
+      2.26
+     ]
+    },
+    {
+     "name": "door_nowhere_leaf",
+     "parent": "door_nowhere",
+     "pivot": [
+      -0.48,
+      0.0,
+      0.0
+     ],
+     "tris": 92,
+     "min": [
+      -0.48,
+      -0.0725,
+      0.01
+     ],
+     "max": [
+      0.48,
+      0.0525,
+      2.19
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "exit_sign_right",
+   "title": "Exit Sign (Right)",
+   "group": "fittings",
+   "place": "wall",
+   "note": "green EXIT, the arrow right; always lit",
+   "tris": 14,
+   "size": [
+    0.4,
+    0.061,
+    0.16
+   ],
+   "min": [
+    -0.2,
+    -0.061,
+    2.47
+   ],
+   "max": [
+    0.2,
+    0.0,
+    2.63
+   ],
+   "parts": [
+    {
+     "name": "exit_sign_right",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.2,
+      -0.06,
+      2.47
+     ],
+     "max": [
+      0.2,
+      0.0,
+      2.63
+     ]
+    },
+    {
+     "name": "exit_sign_right_lamp",
+     "parent": "exit_sign_right",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 2,
+     "min": [
+      -0.19,
+      -0.061,
+      2.48
+     ],
+     "max": [
+      0.19,
+      -0.061,
+      2.62
+     ]
+    }
+   ],
+   "anims": [],
+   "use": {
+    "kind": "powered",
+    "on": true,
+    "lit": [
+     "exit_sign_right_lamp"
+    ]
+   }
+  },
+  {
+   "name": "vent_wall",
+   "title": "Wall Vent",
+   "group": "fittings",
+   "place": "wall",
+   "note": "low on the wall, louvred; a hum behind it",
+   "tris": 12,
+   "size": [
+    0.5,
+    0.04,
+    0.3
+   ],
+   "min": [
+    -0.25,
+    -0.04,
+    0.2
+   ],
+   "max": [
+    0.25,
+    0.0,
+    0.5
+   ],
+   "parts": [
+    {
+     "name": "vent_wall",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.25,
+      -0.04,
+      0.2
+     ],
+     "max": [
+      0.25,
+      0.0,
+      0.5
+     ]
+    }
+   ],
+   "anims": []
+  }
+ ]
+}

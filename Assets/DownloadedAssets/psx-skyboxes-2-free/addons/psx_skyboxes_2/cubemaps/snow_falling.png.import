@@ -1,0 +1,25 @@
+[remap]
+
+importer="cubemap_texture"
+type="CompressedCubemap"
+uid="uid://cvd3pbkwvn48o"
+path="res://.godot/imported/snow_falling.png-48afcf7bddcb5f73267dd0b686430b22.ccube"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://addons/psx_skyboxes_2/cubemaps/snow_falling.png"
+dest_files=["res://.godot/imported/snow_falling.png-48afcf7bddcb5f73267dd0b686430b22.ccube"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/arrangement=2
