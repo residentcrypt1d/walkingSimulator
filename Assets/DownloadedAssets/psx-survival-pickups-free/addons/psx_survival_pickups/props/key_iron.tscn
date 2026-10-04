@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/key_iron_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1300, 0.0110, 0.0360)
+
+[node name="key_iron" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "key_iron"
+title = "Iron Key"
+text = "A heavy iron key, its bow worked into a quatrefoil. Rust in the wards. It belongs to an old lock."
+
+[node name="Collision" type="StaticBody3D" parent="key_iron"]
+
+[node name="Box" type="CollisionShape3D" parent="key_iron/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0150, 0.0041, -0.0000)
+shape = SubResource("box0")

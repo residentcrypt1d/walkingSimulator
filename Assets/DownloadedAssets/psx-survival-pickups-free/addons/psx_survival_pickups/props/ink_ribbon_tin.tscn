@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/ink_ribbon_tin_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.0600, 0.0170, 0.0600)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0624, 0.0080, 0.0624)
+
+[node name="ink_ribbon_tin" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "ink_ribbon"
+title = "Ink Ribbon"
+reveal = "open"
+text = "A typewriter ribbon in its tin. Enough ink for one save."
+
+[node name="Collision" type="StaticBody3D" parent="ink_ribbon_tin"]
+
+[node name="Box" type="CollisionShape3D" parent="ink_ribbon_tin/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0085, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="ink_ribbon_tin/ink_ribbon_tin_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="ink_ribbon_tin/ink_ribbon_tin_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0150, -0.0000)
+shape = SubResource("box1")

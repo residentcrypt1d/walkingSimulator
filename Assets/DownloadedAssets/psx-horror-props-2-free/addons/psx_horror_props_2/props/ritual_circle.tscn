@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_horror_props_2/models/ritual_circle_model.glb" id="1"]
+
+[node name="ritual_circle" instance=ExtResource("1")]

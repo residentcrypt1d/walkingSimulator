@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/pill_bottle_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.0380, 0.0700, 0.0362)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0410, 0.0210, 0.0390)
+
+[node name="pill_bottle" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "pill_bottle"
+title = "Pill Bottle"
+text = "Take two as needed for pain. Do not exceed eight in 24 hours. Prescribed to: E. Blackwood."
+reveal = "open"
+
+[node name="Collision" type="StaticBody3D" parent="pill_bottle"]
+
+[node name="Box" type="CollisionShape3D" parent="pill_bottle/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0350, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="pill_bottle/pill_bottle_cap"]
+
+[node name="Box" type="CollisionShape3D" parent="pill_bottle/pill_bottle_cap/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0745, -0.0000)
+shape = SubResource("box1")

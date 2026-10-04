@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/typewriter_save_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.3000, 0.1150, 0.2960)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.4608, 0.1817, 0.1859)
+
+[node name="typewriter_save" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "save"
+takes = "ink_ribbon"
+clip = "type"
+title = "Typewriter"
+text = "A typewriter, a sheet already in it. Use an ink ribbon to record your progress."
+
+[node name="Collision" type="StaticBody3D" parent="typewriter_save"]
+
+[node name="Box" type="CollisionShape3D" parent="typewriter_save/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0575, 0.0180)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="typewriter_save/typewriter_save_carriage"]
+
+[node name="Box" type="CollisionShape3D" parent="typewriter_save/typewriter_save_carriage/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0224, 0.1909, -0.0421)
+shape = SubResource("box1")

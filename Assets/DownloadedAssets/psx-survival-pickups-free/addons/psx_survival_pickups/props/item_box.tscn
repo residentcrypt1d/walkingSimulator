@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/item_box_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.8816, 0.3840, 0.4680)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.8100, 0.1320, 0.4790)
+
+[node name="item_box" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "storage"
+clip = "open"
+title = "Item Box"
+text = "A storage chest. What you put in one, you will find in all of them."
+
+[node name="Collision" type="StaticBody3D" parent="item_box"]
+
+[node name="Box" type="CollisionShape3D" parent="item_box/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.1900, 0.0030)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="item_box/item_box_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="item_box/item_box_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0360, 0.2285)
+shape = SubResource("box1")

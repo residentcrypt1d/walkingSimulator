@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/ammo_box_12ga_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1200, 0.0700, 0.0650)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.1200, 0.0330, 0.0650)
+
+[node name="ammo_box_12ga" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "ammo_12ga"
+amount = 8
+title = "Shotgun Shells"
+text = "12 GAUGE, 25 shells. 8 for the shotguns."
+reveal = "open"
+
+[node name="Collision" type="StaticBody3D" parent="ammo_box_12ga"]
+
+[node name="Box" type="CollisionShape3D" parent="ammo_box_12ga/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0350, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="ammo_box_12ga/ammo_box_12ga_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="ammo_box_12ga/ammo_box_12ga_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, -0.0150, 0.0325)
+shape = SubResource("box1")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/ammo_box_9mm_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.0850, 0.0320, 0.0580)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.0850, 0.0159, 0.0580)
+
+[node name="ammo_box_9mm" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "ammo_9mm"
+amount = 15
+title = "9mm Rounds"
+text = "9MM LUGER, 50 cartridges. 15 for the 9mm pistol, the machine pistol and the SMG."
+reveal = "open"
+
+[node name="Collision" type="StaticBody3D" parent="ammo_box_9mm"]
+
+[node name="Box" type="CollisionShape3D" parent="ammo_box_9mm/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0160, -0.0000)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="ammo_box_9mm/ammo_box_9mm_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="ammo_box_9mm/ammo_box_9mm_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, -0.0064, 0.0290)
+shape = SubResource("box1")

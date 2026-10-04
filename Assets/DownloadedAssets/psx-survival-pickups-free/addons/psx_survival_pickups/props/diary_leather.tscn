@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/diary_leather_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.1560, 0.0280, 0.2350)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.1560, 0.0075, 0.2100)
+
+[node name="diary_leather" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "diary"
+title = "Leather Diary"
+text = "Oct 3. The rain again. Father won't leave the study.\nOct 9. Something in the cellar answers when you knock.\nOct 12. I have hidden the moon key where only the clock can see it."
+reveal = "open"
+
+[node name="Collision" type="StaticBody3D" parent="diary_leather"]
+
+[node name="Box" type="CollisionShape3D" parent="diary_leather/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0030, 0.0140, 0.0125)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="diary_leather/diary_leather_cover"]
+
+[node name="Box" type="CollisionShape3D" parent="diary_leather/diary_leather_cover/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0780, 0.0018, -0.0000)
+shape = SubResource("box1")

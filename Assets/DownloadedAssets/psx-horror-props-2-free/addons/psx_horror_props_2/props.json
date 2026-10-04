@@ -1,0 +1,638 @@
+{
+ "atlas": 512,
+ "atlas_used": 192,
+ "fps": 30,
+ "props": [
+  {
+   "name": "ritual_circle",
+   "title": "Ritual Circle",
+   "group": "occult",
+   "place": "floor",
+   "note": "chalk on the floor; walk over it",
+   "tris": 324,
+   "size": [
+    2.0,
+    2.0,
+    0.107
+   ],
+   "min": [
+    -1.0,
+    -1.0,
+    0.0
+   ],
+   "max": [
+    1.0,
+    1.0,
+    0.107
+   ],
+   "parts": [
+    {
+     "name": "ritual_circle",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 324,
+     "min": [
+      -1.0,
+      -1.0,
+      0.0
+     ],
+     "max": [
+      1.0,
+      1.0,
+      0.107
+     ]
+    }
+   ],
+   "anims": [],
+   "solid": false
+  },
+  {
+   "name": "goat_skull",
+   "title": "Goat Skull",
+   "group": "occult",
+   "place": "item",
+   "note": "",
+   "tris": 368,
+   "size": [
+    0.22,
+    0.418,
+    0.177
+   ],
+   "min": [
+    -0.11,
+    -0.2,
+    0.015
+   ],
+   "max": [
+    0.11,
+    0.218,
+    0.192
+   ],
+   "parts": [
+    {
+     "name": "goat_skull",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 368,
+     "min": [
+      -0.11,
+      -0.2,
+      0.015
+     ],
+     "max": [
+      0.11,
+      0.2177,
+      0.1923
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "grimoire",
+   "title": "Grimoire",
+   "group": "occult",
+   "place": "item",
+   "note": "the cover opens on a summoning",
+   "tris": 84,
+   "size": [
+    0.274,
+    0.322,
+    0.087
+   ],
+   "min": [
+    -0.131,
+    -0.161,
+    0.0
+   ],
+   "max": [
+    0.143,
+    0.161,
+    0.087
+   ],
+   "parts": [
+    {
+     "name": "grimoire",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 36,
+     "min": [
+      -0.131,
+      -0.16,
+      0.0
+     ],
+     "max": [
+      0.12,
+      0.16,
+      0.084
+     ]
+    },
+    {
+     "name": "grimoire_cover",
+     "parent": "grimoire",
+     "pivot": [
+      -0.124,
+      0.0,
+      0.078
+     ],
+     "tris": 48,
+     "min": [
+      -0.12,
+      -0.161,
+      0.045
+     ],
+     "max": [
+      0.143,
+      0.161,
+      0.087
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.4,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "candle_cluster",
+   "title": "Candle Cluster",
+   "group": "candles",
+   "place": "item",
+   "note": "a dozen candles in their own wax",
+   "tris": 822,
+   "size": [
+    0.42,
+    0.38,
+    0.263
+   ],
+   "min": [
+    -0.2,
+    -0.19,
+    0.0
+   ],
+   "max": [
+    0.22,
+    0.19,
+    0.263
+   ],
+   "parts": [
+    {
+     "name": "candle_cluster",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 822,
+     "min": [
+      -0.2,
+      -0.1902,
+      0.0
+     ],
+     "max": [
+      0.22,
+      0.1902,
+      0.2632
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "candle_skull",
+   "title": "Skull Candle",
+   "group": "candles",
+   "place": "item",
+   "note": "a human skull, black wax down its face",
+   "tris": 254,
+   "size": [
+    0.148,
+    0.195,
+    0.27
+   ],
+   "min": [
+    -0.074,
+    -0.09,
+    -0.007
+   ],
+   "max": [
+    0.074,
+    0.104,
+    0.262
+   ],
+   "parts": [
+    {
+     "name": "candle_skull",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 254,
+     "min": [
+      -0.074,
+      -0.09,
+      -0.0075
+     ],
+     "max": [
+      0.074,
+      0.1045,
+      0.262
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "doll_porcelain",
+   "title": "Porcelain Doll",
+   "group": "dolls",
+   "place": "item",
+   "note": "her head turns to look at you",
+   "tris": 660,
+   "size": [
+    0.216,
+    0.257,
+    0.333
+   ],
+   "min": [
+    -0.108,
+    -0.165,
+    0.0
+   ],
+   "max": [
+    0.108,
+    0.092,
+    0.333
+   ],
+   "parts": [
+    {
+     "name": "doll_porcelain",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 392,
+     "min": [
+      -0.108,
+      -0.165,
+      0.0
+     ],
+     "max": [
+      0.108,
+      0.0918,
+      0.24
+     ]
+    },
+    {
+     "name": "doll_porcelain_head",
+     "parent": "doll_porcelain",
+     "pivot": [
+      0.0,
+      0.0,
+      0.24
+     ],
+     "tris": 268,
+     "min": [
+      -0.0694,
+      -0.0491,
+      0.1979
+     ],
+     "max": [
+      0.0694,
+      0.0653,
+      0.3332
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "look",
+     "seconds": 3.0,
+     "loop": false
+    }
+   ]
+  },
+  {
+   "name": "gibbet",
+   "title": "Gibbet",
+   "group": "restraints",
+   "place": "floor",
+   "note": "the cage swings; its prisoner stayed",
+   "tris": 1340,
+   "size": [
+    1.608,
+    0.593,
+    2.6
+   ],
+   "min": [
+    -0.336,
+    -0.297,
+    0.0
+   ],
+   "max": [
+    1.272,
+    0.297,
+    2.6
+   ],
+   "parts": [
+    {
+     "name": "gibbet",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 120,
+     "min": [
+      -0.3357,
+      -0.25,
+      0.0
+     ],
+     "max": [
+      1.05,
+      0.25,
+      2.6
+     ]
+    },
+    {
+     "name": "gibbet_cage",
+     "parent": "gibbet",
+     "pivot": [
+      0.96,
+      0.0,
+      2.43
+     ],
+     "tris": 1220,
+     "min": [
+      0.648,
+      -0.2967,
+      0.638
+     ],
+     "max": [
+      1.272,
+      0.2967,
+      2.4462
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "swing",
+     "seconds": 3.5,
+     "loop": true
+    }
+   ]
+  },
+  {
+   "name": "manacles",
+   "title": "Manacles",
+   "group": "restraints",
+   "place": "item",
+   "note": "",
+   "tris": 472,
+   "size": [
+    0.411,
+    0.133,
+    0.036
+   ],
+   "min": [
+    -0.191,
+    -0.053,
+    -0.007
+   ],
+   "max": [
+    0.22,
+    0.08,
+    0.03
+   ],
+   "parts": [
+    {
+     "name": "manacles",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 472,
+     "min": [
+      -0.1909,
+      -0.053,
+      -0.0066
+     ],
+     "max": [
+      0.22,
+      0.0804,
+      0.0296
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "severed_hand",
+   "title": "Severed Hand",
+   "group": "gore",
+   "place": "item",
+   "note": "",
+   "tris": 190,
+   "size": [
+    0.164,
+    0.268,
+    0.043
+   ],
+   "min": [
+    -0.076,
+    -0.124,
+    -0.001
+   ],
+   "max": [
+    0.088,
+    0.144,
+    0.041
+   ],
+   "parts": [
+    {
+     "name": "severed_hand",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 190,
+     "min": [
+      -0.076,
+      -0.1244,
+      -0.0014
+     ],
+     "max": [
+      0.088,
+      0.1441,
+      0.0414
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "bucket_blood",
+   "title": "Bucket of Blood",
+   "group": "gore",
+   "place": "item",
+   "note": "full to the brim",
+   "tris": 238,
+   "size": [
+    0.432,
+    0.411,
+    0.464
+   ],
+   "min": [
+    -0.176,
+    -0.264,
+    0.0
+   ],
+   "max": [
+    0.256,
+    0.147,
+    0.464
+   ],
+   "parts": [
+    {
+     "name": "bucket_blood",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 238,
+     "min": [
+      -0.176,
+      -0.264,
+      0.0
+     ],
+     "max": [
+      0.256,
+      0.1474,
+      0.464
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "tape_reels",
+   "title": "Session Tapes",
+   "group": "radio",
+   "place": "item",
+   "note": "",
+   "tris": 188,
+   "size": [
+    0.349,
+    0.215,
+    0.083
+   ],
+   "min": [
+    -0.109,
+    -0.106,
+    -0.001
+   ],
+   "max": [
+    0.241,
+    0.109,
+    0.082
+   ],
+   "parts": [
+    {
+     "name": "tape_reels",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 188,
+     "min": [
+      -0.1089,
+      -0.1059,
+      -0.0007
+     ],
+     "max": [
+      0.2405,
+      0.1087,
+      0.082
+     ]
+    }
+   ],
+   "anims": []
+  },
+  {
+   "name": "sign_turn_back",
+   "title": "Turn Back Sign",
+   "group": "signs",
+   "place": "floor",
+   "note": "painted in a hurry",
+   "tris": 48,
+   "size": [
+    0.714,
+    0.079,
+    1.4
+   ],
+   "min": [
+    -0.357,
+    -0.024,
+    -0.08
+   ],
+   "max": [
+    0.357,
+    0.055,
+    1.32
+   ],
+   "parts": [
+    {
+     "name": "sign_turn_back",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 48,
+     "min": [
+      -0.3568,
+      -0.024,
+      -0.08
+     ],
+     "max": [
+      0.3568,
+      0.055,
+      1.32
+     ]
+    }
+   ],
+   "anims": []
+  }
+ ]
+}

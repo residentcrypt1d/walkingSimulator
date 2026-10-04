@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_survival_pickups/models/first_aid_box_model.glb" id="1"]
+[ext_resource type="Script" path="res://addons/psx_survival_pickups/pickup.gd" id="2"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.2000, 0.0650, 0.1450)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.2040, 0.0150, 0.1390)
+
+[node name="first_aid_box" instance=ExtResource("1")]
+script = ExtResource("2")
+kind = "item"
+item = "first_aid_kit"
+title = "First Aid Kit"
+text = "Dressings, iodine, a needle and thread. Enough to stop the bleeding, and then some."
+reveal = "open"
+
+[node name="Collision" type="StaticBody3D" parent="first_aid_box"]
+
+[node name="Box" type="CollisionShape3D" parent="first_aid_box/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0325, 0.0075)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="first_aid_box/first_aid_box_lid"]
+
+[node name="Box" type="CollisionShape3D" parent="first_aid_box/first_aid_box_lid/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0045, 0.0695)
+shape = SubResource("box1")

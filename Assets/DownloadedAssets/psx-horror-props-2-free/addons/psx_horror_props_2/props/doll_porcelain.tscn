@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://addons/psx_horror_props_2/models/doll_porcelain_model.glb" id="1"]
+
+[sub_resource type="BoxShape3D" id="box0"]
+size = Vector3(0.2160, 0.2400, 0.2568)
+
+[sub_resource type="BoxShape3D" id="box1"]
+size = Vector3(0.1388, 0.1353, 0.1144)
+
+[node name="doll_porcelain" instance=ExtResource("1")]
+
+[node name="Collision" type="StaticBody3D" parent="doll_porcelain"]
+
+[node name="Box" type="CollisionShape3D" parent="doll_porcelain/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.1200, 0.0366)
+shape = SubResource("box0")
+
+[node name="Collision" type="StaticBody3D" parent="doll_porcelain/doll_porcelain_head"]
+
+[node name="Box" type="CollisionShape3D" parent="doll_porcelain/doll_porcelain_head/Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0000, 0.0256, -0.0081)
+shape = SubResource("box1")

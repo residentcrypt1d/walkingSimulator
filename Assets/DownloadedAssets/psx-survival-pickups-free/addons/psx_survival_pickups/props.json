@@ -1,0 +1,1099 @@
+{
+ "atlas": 1024,
+ "atlas_used": 144,
+ "fps": 30,
+ "props": [
+  {
+   "name": "key_iron",
+   "title": "Iron Key",
+   "group": "keys",
+   "place": "item",
+   "note": "heavy, warded, a quatrefoil bow",
+   "tris": 340,
+   "size": [
+    0.13,
+    0.036,
+    0.011
+   ],
+   "min": [
+    -0.08,
+    -0.018,
+    -0.001
+   ],
+   "max": [
+    0.05,
+    0.018,
+    0.01
+   ],
+   "parts": [
+    {
+     "name": "key_iron",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 340,
+     "min": [
+      -0.08,
+      -0.018,
+      -0.0014
+     ],
+     "max": [
+      0.05,
+      0.018,
+      0.0096
+     ]
+    }
+   ],
+   "anims": [],
+   "pickup": {
+    "kind": "item",
+    "item": "key_iron",
+    "title": "Iron Key",
+    "text": "A heavy iron key, its bow worked into a quatrefoil. Rust in the wards. It belongs to an old lock."
+   }
+  },
+  {
+   "name": "keycard_red",
+   "title": "Keycard, Level 1 (red)",
+   "group": "keys",
+   "place": "item",
+   "note": "level 1; a photo, a chip",
+   "tris": 12,
+   "size": [
+    0.086,
+    0.054,
+    0.001
+   ],
+   "min": [
+    -0.043,
+    -0.027,
+    0.0
+   ],
+   "max": [
+    0.043,
+    0.027,
+    0.001
+   ],
+   "parts": [
+    {
+     "name": "keycard_red",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 12,
+     "min": [
+      -0.043,
+      -0.027,
+      0.0
+     ],
+     "max": [
+      0.043,
+      0.027,
+      0.0014
+     ]
+    }
+   ],
+   "anims": [],
+   "pickup": {
+    "kind": "item",
+    "item": "keycard_red",
+    "title": "Keycard, Level 1 (red)",
+    "text": "Clearance level 1: the red doors. Helix Research staff only."
+   }
+  },
+  {
+   "name": "note_folded",
+   "title": "Folded Note",
+   "group": "documents",
+   "place": "item",
+   "note": "folded in three; it unfolds",
+   "tris": 12,
+   "size": [
+    0.148,
+    0.07,
+    0.002
+   ],
+   "min": [
+    -0.074,
+    -0.035,
+    0.0
+   ],
+   "max": [
+    0.074,
+    0.035,
+    0.003
+   ],
+   "parts": [
+    {
+     "name": "note_folded",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 4,
+     "min": [
+      -0.074,
+      -0.035,
+      0.0003
+     ],
+     "max": [
+      0.074,
+      0.035,
+      0.0006
+     ]
+    },
+    {
+     "name": "note_folded_top",
+     "parent": "note_folded",
+     "pivot": [
+      0.0,
+      0.035,
+      0.0011
+     ],
+     "tris": 4,
+     "min": [
+      -0.074,
+      -0.035,
+      0.0013
+     ],
+     "max": [
+      0.074,
+      0.035,
+      0.0016
+     ]
+    },
+    {
+     "name": "note_folded_bottom",
+     "parent": "note_folded",
+     "pivot": [
+      0.0,
+      -0.035,
+      0.0016
+     ],
+     "tris": 4,
+     "min": [
+      -0.074,
+      -0.035,
+      0.0023
+     ],
+     "max": [
+      0.074,
+      0.035,
+      0.0026
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "unfold",
+     "seconds": 1.4,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "note",
+    "title": "Folded Note",
+    "text": "They locked the study and took the key upstairs with them. I heard the typewriter again last night, though no one has a ribbon left. If you are reading this, save what you can.",
+    "reveal": "unfold"
+   }
+  },
+  {
+   "name": "diary_leather",
+   "title": "Leather Diary",
+   "group": "documents",
+   "place": "item",
+   "note": "strapped; the cover opens",
+   "tris": 88,
+   "size": [
+    0.162,
+    0.235,
+    0.036
+   ],
+   "min": [
+    -0.081,
+    -0.13,
+    0.0
+   ],
+   "max": [
+    0.081,
+    0.105,
+    0.036
+   ],
+   "parts": [
+    {
+     "name": "diary_leather",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 52,
+     "min": [
+      -0.081,
+      -0.13,
+      0.0
+     ],
+     "max": [
+      0.075,
+      0.105,
+      0.028
+     ]
+    },
+    {
+     "name": "diary_leather_cover",
+     "parent": "diary_leather",
+     "pivot": [
+      -0.075,
+      0.0,
+      0.03
+     ],
+     "tris": 36,
+     "min": [
+      -0.075,
+      -0.105,
+      0.028
+     ],
+     "max": [
+      0.081,
+      0.105,
+      0.0355
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.0,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "diary",
+    "title": "Leather Diary",
+    "text": "Oct 3. The rain again. Father won't leave the study.\nOct 9. Something in the cellar answers when you knock.\nOct 12. I have hidden the moon key where only the clock can see it.",
+    "reveal": "open"
+   }
+  },
+  {
+   "name": "map_folded",
+   "title": "Folded Map",
+   "group": "documents",
+   "place": "item",
+   "note": "a floor plan; it opens out",
+   "tris": 12,
+   "size": [
+    0.1,
+    0.21,
+    0.002
+   ],
+   "min": [
+    -0.05,
+    -0.105,
+    0.0
+   ],
+   "max": [
+    0.05,
+    0.105,
+    0.003
+   ],
+   "parts": [
+    {
+     "name": "map_folded",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 4,
+     "min": [
+      -0.05,
+      -0.105,
+      0.0003
+     ],
+     "max": [
+      0.05,
+      0.105,
+      0.0006
+     ]
+    },
+    {
+     "name": "map_folded_left",
+     "parent": "map_folded",
+     "pivot": [
+      -0.05,
+      0.0,
+      0.0011
+     ],
+     "tris": 4,
+     "min": [
+      -0.05,
+      -0.105,
+      0.0013
+     ],
+     "max": [
+      0.05,
+      0.105,
+      0.0016
+     ]
+    },
+    {
+     "name": "map_folded_right",
+     "parent": "map_folded",
+     "pivot": [
+      0.05,
+      0.0,
+      0.0016
+     ],
+     "tris": 4,
+     "min": [
+      -0.05,
+      -0.105,
+      0.0023
+     ],
+     "max": [
+      0.05,
+      0.105,
+      0.0026
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "unfold",
+     "seconds": 1.4,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "map",
+    "title": "Folded Map",
+    "text": "Blackwood House, ground floor. The hall, the dining room, the study and the library; a door under the stairs marked CELLAR, crossed out in pencil.",
+    "reveal": "unfold"
+   }
+  },
+  {
+   "name": "first_aid_box",
+   "title": "First Aid Kit",
+   "group": "medicine",
+   "place": "item",
+   "note": "an enamel tin; it opens",
+   "tris": 244,
+   "size": [
+    0.204,
+    0.147,
+    0.077
+   ],
+   "min": [
+    -0.102,
+    -0.08,
+    0.0
+   ],
+   "max": [
+    0.102,
+    0.067,
+    0.077
+   ],
+   "parts": [
+    {
+     "name": "first_aid_box",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 220,
+     "min": [
+      -0.1,
+      -0.08,
+      0.0
+     ],
+     "max": [
+      0.1,
+      0.065,
+      0.065
+     ]
+    },
+    {
+     "name": "first_aid_box_lid",
+     "parent": "first_aid_box",
+     "pivot": [
+      0.0,
+      0.067,
+      0.065
+     ],
+     "tris": 24,
+     "min": [
+      -0.102,
+      -0.072,
+      0.062
+     ],
+     "max": [
+      0.102,
+      0.067,
+      0.077
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 0.9,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "first_aid_kit",
+    "title": "First Aid Kit",
+    "text": "Dressings, iodine, a needle and thread. Enough to stop the bleeding, and then some.",
+    "reveal": "open"
+   }
+  },
+  {
+   "name": "pill_bottle",
+   "title": "Pill Bottle",
+   "group": "medicine",
+   "place": "item",
+   "note": "amber, a pharmacy label; the cap unscrews",
+   "tris": 172,
+   "size": [
+    0.041,
+    0.039,
+    0.085
+   ],
+   "min": [
+    -0.021,
+    -0.019,
+    0.0
+   ],
+   "max": [
+    0.021,
+    0.019,
+    0.085
+   ],
+   "parts": [
+    {
+     "name": "pill_bottle",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 112,
+     "min": [
+      -0.019,
+      -0.0181,
+      0.0
+     ],
+     "max": [
+      0.019,
+      0.0181,
+      0.07
+     ]
+    },
+    {
+     "name": "pill_bottle_cap",
+     "parent": "pill_bottle",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 60,
+     "min": [
+      -0.0205,
+      -0.0195,
+      0.064
+     ],
+     "max": [
+      0.0205,
+      0.0195,
+      0.085
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.0,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "pill_bottle",
+    "title": "Pill Bottle",
+    "text": "Take two as needed for pain. Do not exceed eight in 24 hours. Prescribed to: E. Blackwood.",
+    "reveal": "open"
+   }
+  },
+  {
+   "name": "herb_green",
+   "title": "Green Herb",
+   "group": "medicine",
+   "place": "item",
+   "note": "the common one",
+   "tris": 392,
+   "size": [
+    0.123,
+    0.083,
+    0.022
+   ],
+   "min": [
+    -0.05,
+    -0.04,
+    -0.0
+   ],
+   "max": [
+    0.073,
+    0.042,
+    0.021
+   ],
+   "parts": [
+    {
+     "name": "herb_green",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 392,
+     "min": [
+      -0.05,
+      -0.0402,
+      -0.0002
+     ],
+     "max": [
+      0.0727,
+      0.0424,
+      0.0215
+     ]
+    }
+   ],
+   "anims": [],
+   "pickup": {
+    "kind": "item",
+    "item": "herb_green",
+    "title": "Green Herb",
+    "text": "A green herb, bitter. Chewed, it takes the edge off the pain."
+   }
+  },
+  {
+   "name": "ammo_box_9mm",
+   "title": "9mm Rounds",
+   "group": "ammo",
+   "place": "item",
+   "note": "50 cartridges; gives 15 ammo_9mm",
+   "tris": 56,
+   "size": [
+    0.085,
+    0.058,
+    0.034
+   ],
+   "min": [
+    -0.043,
+    -0.029,
+    0.0
+   ],
+   "max": [
+    0.043,
+    0.029,
+    0.034
+   ],
+   "parts": [
+    {
+     "name": "ammo_box_9mm",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 32,
+     "min": [
+      -0.0425,
+      -0.029,
+      0.0
+     ],
+     "max": [
+      0.0425,
+      0.029,
+      0.032
+     ]
+    },
+    {
+     "name": "ammo_box_9mm_lid",
+     "parent": "ammo_box_9mm",
+     "pivot": [
+      0.0,
+      0.029,
+      0.032
+     ],
+     "tris": 24,
+     "min": [
+      -0.0425,
+      -0.029,
+      0.0176
+     ],
+     "max": [
+      0.0425,
+      0.029,
+      0.0335
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 0.8,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "ammo_9mm",
+    "amount": 15,
+    "title": "9mm Rounds",
+    "text": "9MM LUGER, 50 cartridges. 15 for the 9mm pistol, the machine pistol and the SMG.",
+    "reveal": "open"
+   }
+  },
+  {
+   "name": "ammo_box_12ga",
+   "title": "Shotgun Shells",
+   "group": "ammo",
+   "place": "item",
+   "note": "25 shells; gives 8 ammo_12ga",
+   "tris": 56,
+   "size": [
+    0.12,
+    0.065,
+    0.072
+   ],
+   "min": [
+    -0.06,
+    -0.033,
+    0.0
+   ],
+   "max": [
+    0.06,
+    0.033,
+    0.072
+   ],
+   "parts": [
+    {
+     "name": "ammo_box_12ga",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 32,
+     "min": [
+      -0.06,
+      -0.0325,
+      0.0
+     ],
+     "max": [
+      0.06,
+      0.0325,
+      0.07
+     ]
+    },
+    {
+     "name": "ammo_box_12ga_lid",
+     "parent": "ammo_box_12ga",
+     "pivot": [
+      0.0,
+      0.0325,
+      0.07
+     ],
+     "tris": 24,
+     "min": [
+      -0.06,
+      -0.0325,
+      0.0385
+     ],
+     "max": [
+      0.06,
+      0.0325,
+      0.0715
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 0.8,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "ammo_12ga",
+    "amount": 8,
+    "title": "Shotgun Shells",
+    "text": "12 GAUGE, 25 shells. 8 for the shotguns.",
+    "reveal": "open"
+   }
+  },
+  {
+   "name": "battery_aa_pack",
+   "title": "AA Batteries",
+   "group": "batteries and light",
+   "place": "item",
+   "note": "four, still sealed",
+   "tris": 124,
+   "size": [
+    0.075,
+    0.11,
+    0.015
+   ],
+   "min": [
+    -0.037,
+    -0.055,
+    0.0
+   ],
+   "max": [
+    0.037,
+    0.055,
+    0.015
+   ],
+   "parts": [
+    {
+     "name": "battery_aa_pack",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 124,
+     "min": [
+      -0.0375,
+      -0.055,
+      0.0
+     ],
+     "max": [
+      0.0375,
+      0.055,
+      0.015
+     ]
+    }
+   ],
+   "anims": [],
+   "pickup": {
+    "kind": "item",
+    "item": "battery",
+    "title": "AA Batteries",
+    "text": "Four AA batteries, sealed. Enough for a flashlight's night.",
+    "amount": 4
+   }
+  },
+  {
+   "name": "typewriter_save",
+   "title": "Typewriter",
+   "group": "save room",
+   "place": "item",
+   "note": "a save point: each save takes an ink ribbon; the carriage types",
+   "tris": 1200,
+   "size": [
+    0.461,
+    0.301,
+    0.282
+   ],
+   "min": [
+    -0.253,
+    -0.166,
+    0.0
+   ],
+   "max": [
+    0.208,
+    0.135,
+    0.282
+   ],
+   "parts": [
+    {
+     "name": "typewriter_save",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 1044,
+     "min": [
+      -0.15,
+      -0.166,
+      0.0
+     ],
+     "max": [
+      0.15,
+      0.13,
+      0.115
+     ]
+    },
+    {
+     "name": "typewriter_save_carriage",
+     "parent": "typewriter_save",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 156,
+     "min": [
+      -0.2528,
+      -0.0509,
+      0.1
+     ],
+     "max": [
+      0.208,
+      0.135,
+      0.2817
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "type",
+     "seconds": 2.4,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "save",
+    "takes": "ink_ribbon",
+    "clip": "type",
+    "title": "Typewriter",
+    "text": "A typewriter, a sheet already in it. Use an ink ribbon to record your progress."
+   }
+  },
+  {
+   "name": "ink_ribbon_tin",
+   "title": "Ink Ribbon",
+   "group": "save room",
+   "place": "item",
+   "note": "in its tin; the lid lifts off",
+   "tris": 176,
+   "size": [
+    0.062,
+    0.062,
+    0.019
+   ],
+   "min": [
+    -0.031,
+    -0.031,
+    0.0
+   ],
+   "max": [
+    0.031,
+    0.031,
+    0.019
+   ],
+   "parts": [
+    {
+     "name": "ink_ribbon_tin",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 132,
+     "min": [
+      -0.03,
+      -0.03,
+      0.0
+     ],
+     "max": [
+      0.03,
+      0.03,
+      0.017
+     ]
+    },
+    {
+     "name": "ink_ribbon_tin_lid",
+     "parent": "ink_ribbon_tin",
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 44,
+     "min": [
+      -0.0312,
+      -0.0312,
+      0.011
+     ],
+     "max": [
+      0.0312,
+      0.0312,
+      0.019
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 0.8,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "item",
+    "item": "ink_ribbon",
+    "title": "Ink Ribbon",
+    "reveal": "open",
+    "text": "A typewriter ribbon in its tin. Enough ink for one save."
+   }
+  },
+  {
+   "name": "item_box",
+   "title": "Item Box",
+   "group": "save room",
+   "place": "floor",
+   "note": "storage: the lid opens and shuts",
+   "tris": 180,
+   "size": [
+    0.882,
+    0.479,
+    0.484
+   ],
+   "min": [
+    -0.441,
+    -0.243,
+    -0.002
+   ],
+   "max": [
+    0.441,
+    0.236,
+    0.482
+   ],
+   "parts": [
+    {
+     "name": "item_box",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 136,
+     "min": [
+      -0.4408,
+      -0.237,
+      -0.002
+     ],
+     "max": [
+      0.4408,
+      0.231,
+      0.382
+     ]
+    },
+    {
+     "name": "item_box_lid",
+     "parent": "item_box",
+     "pivot": [
+      0.0,
+      0.225,
+      0.38
+     ],
+     "tris": 44,
+     "min": [
+      -0.405,
+      -0.243,
+      0.35
+     ],
+     "max": [
+      0.405,
+      0.236,
+      0.482
+     ]
+    }
+   ],
+   "anims": [
+    {
+     "name": "open",
+     "seconds": 1.2,
+     "loop": false
+    }
+   ],
+   "pickup": {
+    "kind": "storage",
+    "clip": "open",
+    "title": "Item Box",
+    "text": "A storage chest. What you put in one, you will find in all of them."
+   }
+  },
+  {
+   "name": "coin_gold",
+   "title": "Gold Coin",
+   "group": "collectibles",
+   "place": "item",
+   "note": "a crowned head, 1871",
+   "tris": 52,
+   "size": [
+    0.025,
+    0.024,
+    0.002
+   ],
+   "min": [
+    -0.013,
+    -0.012,
+    0.0
+   ],
+   "max": [
+    0.013,
+    0.012,
+    0.002
+   ],
+   "parts": [
+    {
+     "name": "coin_gold",
+     "parent": null,
+     "pivot": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "tris": 52,
+     "min": [
+      -0.0125,
+      -0.0122,
+      0.0
+     ],
+     "max": [
+      0.0125,
+      0.0122,
+      0.0022
+     ]
+    }
+   ],
+   "anims": [],
+   "pickup": {
+    "kind": "item",
+    "item": "coin_gold",
+    "title": "Gold Coin",
+    "text": "A gold sovereign, 1871, the old queen's head worn smooth. One of thirteen."
+   }
+  }
+ ]
+}
