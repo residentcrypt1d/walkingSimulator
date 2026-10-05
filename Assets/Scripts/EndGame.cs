@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class EndGame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("SceneChange"))
         {
-            Application.Quit();
+            SceneManager.LoadScene("Scenes/EndGame");
         }
     }
 }
